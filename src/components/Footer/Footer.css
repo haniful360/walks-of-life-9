@@ -1,0 +1,80 @@
+.walks-life h3 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+
+}
+
+.walks-life p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 20px 0;
+
+}
+
+.company-info a,
+.product-info a,
+.support-info a {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.company-info h5,
+.product-info h5,
+.support-info h5 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+
+}
+
+.facebook,
+.instagram,
+.twitter {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.fb-icon {
+    color: #337FFF;
+}
+
+.twitter-icon {
+    color: #33CCFF;
+}
+
+.ins-icons {
+    background: linear-gradient(133.75deg, #FBE18A 5.93%, #FCBB45 24.42%, #F75274 39.25%, #D53692 52.33%, #8F39CE 71.47%, #5B4FE9 94.6%);
+}
+
+.copyright p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 60px;
+}
