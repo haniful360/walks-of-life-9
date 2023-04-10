@@ -14,19 +14,19 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
-    errorElement:<ErrorPage></ErrorPage>,
-    children:[
+    element: <Home />,
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
       {
-        path:'/',
-        element:<Banner/>
+        path: '/',
+        element: <Banner />
       },
       {
-        path:'/feature/:featureId',
-        element: <FeatureDetails/>,
-        loader: () => fetch("data.json")
+        path: '/feature/:featureId',
+        element: <FeatureDetails />,
+        loader: ({params}) => fetch("data.json")
       }
-      
+
     ]
   }
 ]);
