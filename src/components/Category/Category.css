@@ -1,0 +1,35 @@
+.category {
+    /* margin: 0 auto; */
+    /* width: 311px;
+    height: 244px; */
+
+}
+
+.category img {
+    width: 40px;
+    height: 40px;
+}
+
+.bg-img {
+    background: linear-gradient(90deg, rgba(126, 144, 254, 0.1) 0%, rgba(152, 115, 255, 0.1) 100%);
+    border-radius: 8px;
+}
+
+.category .name {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    color: #474747;
+}
+
+.available-job {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #A3A3A3;
+
+}

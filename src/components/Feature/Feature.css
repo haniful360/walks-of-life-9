@@ -1,0 +1,69 @@
+.feature {
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.feature img {
+    width: 200px;
+    margin-bottom: 32px;
+}
+
+.job-title {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;
+    color: #474747;
+    margin-bottom: 10px;
+}
+
+.company-name {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #757575;
+    margin-bottom: 10px;
+}
+
+.job-type {
+    width: 109px;
+    height: 40px;
+    padding: 9px 19px;
+    border-radius: 4px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    color: #9873FF;
+    border: 1px solid #9873FF;
+}
+
+.location-salary {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #757575;
+    margin: 15px 0;
+
+}
+
+.view-btn {
+    width: 157px;
+    height: 49px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFF;
+    text-transform: capitalize;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 4px;
+}

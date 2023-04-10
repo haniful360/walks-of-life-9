@@ -1,0 +1,7 @@
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 1280px ;
+    margin: 0 auto;
+}

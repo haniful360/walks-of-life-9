@@ -9,15 +9,23 @@ import {
 import Home from './components/Layout/Home';
 import Banner from './components/Banner/Banner';
 import CategoryList from './components/CategoryList/CategoryList';
+import FeatureDetails from './components/FeatureDetails/FeatureDetails';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home/>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
       {
-        path:'/banner',
+        path:'/',
         element:<Banner/>
       },
+      {
+        path:'/feature/:featureId',
+        element: <FeatureDetails/>,
+        loader: () => fetch("data.json")
+      }
       
     ]
   }

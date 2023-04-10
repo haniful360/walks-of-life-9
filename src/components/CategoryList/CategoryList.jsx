@@ -1,9 +1,11 @@
 import React from 'react';
+import './CategoryList.css'
 import accounts from '../../images/icons/accounts.png'
 import chip from '../../images/icons/chip.png'
 import group from '../../images/icons/Group.png'
 import social from '../../images/icons/social-media.png'
 import Category from '../Category/Category';
+
 const CategoryList = () => {
     const categories = [
         { id: 1, name: 'Account & Finance', job: '300 Jobs Available', img: accounts },
@@ -12,12 +14,12 @@ const CategoryList = () => {
         { id: 4, name: 'Engineering Job', job: '224 Jobs Available', img: social }
     ]
     return (
-        <div>
+        <div className='my-24'>
             <div>
-                <h2>Job Category List</h2>
-                <p>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                <h2 className='category-title'>Job Category List</h2>
+                <p className='category-des'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center items-center w-[1280px] mx-auto'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center items-center w-[1280px] mx-auto mt-8 '>
                 {
                     categories.map(category => <Category
                         key={category.id}
