@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Headers = () => {
     return (
-        <div className='bg-red-200'>
+        <div className='background'>
             <div className="navbar  w-[1280px] mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">

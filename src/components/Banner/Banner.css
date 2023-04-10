@@ -1,0 +1,42 @@
+.background {
+    background: linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%);
+
+}
+
+.banner-title {
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 100px;
+    color: #1A1919;
+
+}
+
+.text-linear {
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    background-clip: text;
+}
+
+.banner-describe {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: #757575;
+}
+
+.get-started-btn {
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    width: 172px;
+    height: 65px;
+    margin-top: 32px;
+}
+
+
+.banner-img img {
+    width: 816px;
+
+}
