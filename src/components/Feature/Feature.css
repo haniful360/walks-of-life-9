@@ -6,6 +6,7 @@
 
 .feature img {
     width: 200px;
+    height: 60px;
     margin-bottom: 32px;
 }
 
@@ -51,7 +52,6 @@
     line-height: 27px;
     color: #757575;
     margin: 15px 0;
-
 }
 
 .view-btn {

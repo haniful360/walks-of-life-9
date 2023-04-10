@@ -10,7 +10,11 @@ const Features = () => {
             .then(data => setFeatures(data))
     }, [])
     return (
-        <div>
+        <div className='mb-24'>
+            <div className='mb-8'>
+                <h2 className='features-title'>Featured Jobs</h2>
+                <p className='features-des'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+            </div>
             <div className='features-container'>
                 {
                     features.map(feature => <Feature
