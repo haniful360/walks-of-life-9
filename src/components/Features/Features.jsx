@@ -1,9 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import Feature from '../Feature/Feature';
 import './Features.css'
+import { useNavigate } from 'react-router-dom';
 
 const Features = () => {
     const [features, setFeatures] = useState([]);
+
+    const [noOfElement, setnoOfElement] = useState(4);
+    const sliceFeature = features.slice(0, noOfElement)
+    // const navigate = useNavigate();
+    const handleSeeAllJob = () => {
+        setnoOfElement(noOfElement + noOfElement)
+    }
 
     useEffect(() => {
         fetch('data.json')
@@ -18,13 +26,13 @@ const Features = () => {
             </div>
             <div className='features-container'>
                 {
-                    features.map(feature => <Feature
-                    key={feature.id}
-                    feature={feature}
+                    sliceFeature.map(feature => <Feature
+                        key={feature.id}
+                        feature={feature}
                     ></Feature>)
                 }
             </div>
-            <button className='see-all-btn'>See All Jobs</button>
+            <button onClick={() => handleSeeAllJob()} className='see-all-btn'>See All Jobs</button>
         </div>
     );
 };
