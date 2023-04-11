@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import Feature from '../Feature/Feature';
 import './Features.css'
-import { useNavigate } from 'react-router-dom';
+
 
 const Features = () => {
     const [features, setFeatures] = useState([]);
 
-    const [noOfElement, setnoOfElement] = useState(4);
+    const [noOfElement, setNoOfElement] = useState(4);
     const sliceFeature = features.slice(0, noOfElement)
-    // const navigate = useNavigate();
+    
     const handleSeeAllJob = () => {
-        setnoOfElement(noOfElement + noOfElement)
+        setNoOfElement(noOfElement + noOfElement)
     }
 
     useEffect(() => {

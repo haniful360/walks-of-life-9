@@ -2,8 +2,12 @@
     background: linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%);
 }
 
-.banner-title {
+.width {
+    width: 1280px;
+    margin: 0 auto;
+}
 
+.banner-title {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 800;
@@ -38,4 +42,32 @@
 .banner-img img {
     width: 816px;
 
+}
+
+@media screen and (max-width: 680px) {
+    .width {
+        width: 100%;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .banner-title {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .banner-describe {
+        font-size: 16px;
+    }
+    .banner-img img {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* features  */
+    .features-container{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
 }

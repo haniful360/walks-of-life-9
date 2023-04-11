@@ -14,12 +14,12 @@ const CategoryList = () => {
         { id: 4, name: 'Engineering Job', job: '224 Jobs Available', img: social }
     ]
     return (
-        <div className='my-24'>
+        <div className='my-24 px-4 lg:px-0'>
             <div>
                 <h2 className='category-title'>Job Category List</h2>
                 <p className='category-des'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center items-center w-[1280px] mx-auto mt-8 '>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center items-center lg:w-[1280px] mx-auto mt-8'>
                 {
                     categories.map(category => <Category
                         key={category.id}

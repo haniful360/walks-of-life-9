@@ -12,11 +12,10 @@ const Headers = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content  mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                            {/* <Link to='/statistic'>home</Link> */}
-                            {/* <li><Link to='/'>Home</Link></li> */}
-                            {/* <li><Link to='/statistic'>Statistics</Link></li> */}
-                            <li><Link to='/applied'>Applied Job</Link></li>
-                            <li><Link to='/blog'>BLo</Link></li>
+                        <li><Link to='/'>Home</Link></li>
+                        <li><Link to='/statistic'>Statistics</Link></li>
+                        <li><Link to='/applied'>Applied Job</Link></li>
+                        <li><Link to='/blog'>BLog</Link></li>
                         </ul>
                     </div>
                     <Link to="/" className="btn btn-ghost normal-case text-xl">Walks Of Life</Link>
@@ -30,7 +29,7 @@ const Headers = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <button className="get-started-btn mt-0 text-[17px] text-white rounded font-bold">Start Applying</button>
+                    <button className="get-started-btn mt-0 text-[17px] text-white rounded btn-sm lg:btn-md font-bold">Start Applying</button>
                 </div>
             </div>
         </div>

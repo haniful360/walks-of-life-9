@@ -8,7 +8,7 @@ const Banner = () => {
     return (
         <div>
             <div className='background'>
-                <div className='grid grid-cols-1 md:grid-cols-2 justify-center items-center w-[1280px] mx-auto pt-12 pb-32'>
+                <div className='grid grid-cols-1 md:grid-cols-2 items-center width'>
                     <div>
                         <h1 className='banner-title'>One Step <br /> Closer To Your <span className='text-linear  text-transparent '>Dream Job</span></h1>
                         <p className='banner-describe'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
@@ -17,7 +17,7 @@ const Banner = () => {
                     </button>
                     </div>
                     <div className='banner-img'>
-                        <img  src={person1} alt="" />
+                        <img src={person1} alt="" />
                     </div>
                 </div>
 

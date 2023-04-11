@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <div className='bg-black mt-24'>
-            <div className='w-[1280px] mx-auto py-[120px] px-6 lg:px-0'>
+            <div className='lg:w-[1280px] mx-auto py-[120px] px-6 lg:px-0'>
             <div className='grid grid-cols-1 sm-grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8  text-white pb-16'>
                 <div className='walks-life'>
                     <h3 className=''>Walks of Life</h3>
