@@ -15,7 +15,7 @@
             "address": "Mirpur 10, Dhaka"
         },
         "jobType": {
-            "A": "Onsite",
+            "A": "Remote",
             "B": "Full Time"
         }
     },
@@ -55,7 +55,7 @@
             "address": "Mirpur 10, Dhaka"
         },
         "jobType": {
-            "A": "Onsite",
+            "A": "Remote",
             "B": "Full Time"
         }
     },
@@ -115,7 +115,7 @@
             "address": "Rangpur, Bangladesh"
         },
         "jobType": {
-            "A": "Remote",
+            "A": "Onsite",
             "B": "FullTime"
         }
     }
