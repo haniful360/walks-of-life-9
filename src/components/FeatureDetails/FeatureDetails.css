@@ -18,9 +18,10 @@
 .job-info p {
     font-family: 'Manrope';
     font-style: normal;
-    font-size: 17px;
+    font-size: 20px;
     line-height: 32px;
     color: #1A1919;
+    margin-top: 15px;
 
 }
 

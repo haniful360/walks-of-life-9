@@ -4,11 +4,15 @@ import './FeatureDetails.css'
 import { AiOutlineDollarCircle, AiOutlineMail } from 'react-icons/ai';
 import { BsTelephone } from 'react-icons/bs';
 import { CiLocationOn } from 'react-icons/ci';
+import { addToDb, getShoppingCart } from '../../utilities/fakedb';
 
 const FeatureDetails = () => {
     const params = useParams();
     let loaderData = useLoaderData();
     const [details, setDetails] = useState({});
+
+    
+
     useEffect(() => {
         if (loaderData) {
             const dataDetails = loaderData.find(data => data.id === params.featureId)
@@ -16,6 +20,12 @@ const FeatureDetails = () => {
         }
     }, [])
 
+    const handleApplyNow = (id) => {
+        // console.log(id);
+        addToDb(id)
+    //    const storedCart = getShoppingCart()
+    //    console.log(storedCart);
+     }
 
     return (
         <div className='w-[1280px] mx-auto mt-12'>
@@ -41,7 +51,8 @@ const FeatureDetails = () => {
                             <p><span className='font-bold'> Job Title: </span>{details.jobTitle}</p>
                         </div>
 
-                        <h5 className='my-2'>Contact Information</h5>
+                        <h5 className='my-2 pb-2'>Contact Information</h5>
+                        <hr />
                         <div className='flex items-center gap-1'>
                             <BsTelephone></BsTelephone>
                             <p><span className='font-bold'> Phone: </span>{details.contact?.phone}</p>
@@ -52,10 +63,10 @@ const FeatureDetails = () => {
                         </div>
                         <div className='flex items-center gap-1'>
                             <CiLocationOn></CiLocationOn>
-                        <p><span className='font-bold'> Address: </span>{details.contact?.address}</p>
+                            <p><span className='font-bold'> Address: </span>{details.contact?.address}</p>
                         </div>
                     </div>
-                    <button className='apply-now-btn'>Apply Now</button>
+                    <button onClick={() => handleApplyNow(params.featureId)} className='apply-now-btn'>Apply Now</button>
                 </div>
 
             </div>

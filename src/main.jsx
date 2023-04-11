@@ -8,9 +8,11 @@ import {
 } from "react-router-dom";
 import Home from './components/Layout/Home';
 import Banner from './components/Banner/Banner';
-import CategoryList from './components/CategoryList/CategoryList';
 import FeatureDetails from './components/FeatureDetails/FeatureDetails';
 import ErrorPage from './components/ErrorPage/ErrorPage';
+import Statistics from './components/Statistics/Statistics';
+import Blogs from './components/Blogs/Blogs';
+import AppliedJob from './components/AppliedJob/AppliedJob';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,7 +26,19 @@ const router = createBrowserRouter([
       {
         path: '/feature/:featureId',
         element: <FeatureDetails />,
-        loader: ({params}) => fetch("data.json")
+        loader: ({ params }) => fetch("data.json")
+      },
+      {
+        path: '/statistic',
+        element: <Statistics />
+      },
+      {
+        path: '/applied',
+        element: <AppliedJob />
+      },
+      {
+        path: '/blog',
+        element: <Blogs />
       }
 
     ]

@@ -17,15 +17,15 @@ const Feature = ({ feature }) => {
             </div>
             <div className='flex items-center gap-3 location-salary'>
                 <div className='flex gap-1 items-center my-2'>
-                <CiLocationOn></CiLocationOn>
-                <span>{contact.address}</span>
+                    <CiLocationOn></CiLocationOn>
+                    <span>{contact.address}</span>
                 </div>
                 <div className='flex gap-1 items-center'>
-                <AiOutlineDollarCircle></AiOutlineDollarCircle>
-                <span>Salary: {salary}</span>
+                    <AiOutlineDollarCircle></AiOutlineDollarCircle>
+                    <span>Salary: {salary}</span>
                 </div>
             </div>
-            <Link to={`/feature/${id}` }><button className="view-btn">view details</button></Link>
+            <Link to={`/feature/${id}`}><button className="view-btn">view details</button></Link>
         </div>
     );
 };

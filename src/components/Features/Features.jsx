@@ -4,6 +4,7 @@ import './Features.css'
 
 const Features = () => {
     const [features, setFeatures] = useState([]);
+
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -23,6 +24,7 @@ const Features = () => {
                     ></Feature>)
                 }
             </div>
+            <button className='see-all-btn'>See All Jobs</button>
         </div>
     );
 };
