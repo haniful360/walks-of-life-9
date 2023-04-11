@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { Link, useLoaderData, useParams } from 'react-router-dom';
 import './FeatureDetails.css'
 import { AiOutlineDollarCircle, AiOutlineMail } from 'react-icons/ai';
 import { BsTelephone } from 'react-icons/bs';
 import { CiLocationOn } from 'react-icons/ci';
-import { addToDb, getShoppingCart } from '../../utilities/fakedb';
+import { addToDb } from '../../utilities/fakedb';
 
 const FeatureDetails = () => {
     const params = useParams();
     let loaderData = useLoaderData();
     const [details, setDetails] = useState({});
 
-    
+
 
     useEffect(() => {
         if (loaderData) {
@@ -23,9 +23,7 @@ const FeatureDetails = () => {
     const handleApplyNow = (id) => {
         // console.log(id);
         addToDb(id)
-    //    const storedCart = getShoppingCart()
-    //    console.log(storedCart);
-     }
+    }
 
     return (
         <div className='w-[1280px] mx-auto mt-12'>
@@ -66,7 +64,10 @@ const FeatureDetails = () => {
                             <p><span className='font-bold'> Address: </span>{details.contact?.address}</p>
                         </div>
                     </div>
-                    <button onClick={() => handleApplyNow(params.featureId)} className='apply-now-btn'>Apply Now</button>
+                    <Link to="/applied">
+                        <button onClick={() => handleApplyNow(params.featureId)} className='apply-now-btn'>Apply Now</button>
+                    </Link>
+
                 </div>
 
             </div>

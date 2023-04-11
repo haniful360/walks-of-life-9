@@ -9,3 +9,18 @@
     margin-top: 50px;
 
 }
+.remote, .onsite  {
+    width: 109px;
+    height: 40px;
+    padding: 9px 19px;
+    border-radius: 4px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    color: #9873FF;
+    border: 1px solid #9873FF;
+    
+    
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { AiOutlineDollarCircle } from 'react-icons/ai';
 import { CiLocationOn } from 'react-icons/ci';
 import { Link } from 'react-router-dom';
@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom';
 const JobReview = ({ feature }) => {
     const { id, name, img, jobType, jobTitle, salary, contact } = feature;
     return (
-        <div className='lg:flex justify-between items-center p-4 job-review lg:w-[1280px] mx-auto border rounded-md mt-6'>
+        <div>
+            <div className='lg:flex justify-between items-center p-4 job-review lg:w-[1280px] mx-auto border rounded-md mt-6'>
             <div className='flex justify-center items-center gap-6'>
                 <div className='bg-[#F4F4F4] p-2 rounded-md block'>
                     <img className='lg:w-[200px]' src={img} alt="" />
@@ -31,6 +32,7 @@ const JobReview = ({ feature }) => {
                 </div>
             </div>
             <Link to={`/feature/${id}`}><button className="view-btn block mx-auto mt-4">view details</button></Link>
+        </div>
         </div>
     );
 };

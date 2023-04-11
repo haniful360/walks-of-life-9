@@ -27,7 +27,7 @@ const router = createBrowserRouter([
       {
         path: '/feature/:featureId',
         element: <FeatureDetails />,
-        loader: ({ params }) => fetch("data.json")
+        loader: ({ params }) => fetch("/data.json")
       },
       {
         path: '/statistic',
