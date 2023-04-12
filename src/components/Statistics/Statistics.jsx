@@ -64,7 +64,7 @@ const Statistics = () => {
     return (
         <div className=''>
             <div className='chart-title composed-bg-img'>
-                <h1>ComposeChart</h1>
+                <h1>ComposedChart</h1>
             <h1>Assignment Mark</h1>
             </div>
             <div className='flex justify-center items-center'>
