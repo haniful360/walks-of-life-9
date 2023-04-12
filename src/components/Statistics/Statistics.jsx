@@ -63,7 +63,10 @@ const Statistics = () => {
     ];
     return (
         <div className=''>
-            <h1 className='chart-title composed-bg-img'>ComposeChart</h1>
+            <div className='chart-title composed-bg-img'>
+                <h1>ComposeChart</h1>
+            <h1>Assignment Mark</h1>
+            </div>
             <div className='flex justify-center items-center'>
                 <ComposedChart
                     width={600}
@@ -75,9 +78,9 @@ const Statistics = () => {
                     <Tooltip />
                     <Legend />
                     <Area type="monotone" dataKey="minus" fill="#8884d8" stroke="#8884d8" />
-                    <Bar dataKey="id" barSize={20} fill="#413ea0" />
+                    <Bar dataKey="mark" barSize={20} fill="#413ea0" />
                     <Line type="monotone" dataKey="mark" stroke="#ff7300" />
-                    <Scatter dataKey="" fill="red" />
+                    <Scatter fill="red" />
                 </ComposedChart>
             </div>
         </div>

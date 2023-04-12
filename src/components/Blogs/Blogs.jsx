@@ -1,10 +1,11 @@
 import React from 'react';
+import './Blogs.css'
 
 const Blogs = () => {
     return (
         <div>
             <section className="px-4 lg:px-16">
-                <h1 className="font-bold text-center my-6 leading-[54px] text-[45px]">FreeQuently Ask Questions?</h1>
+                <h1 className="questions-title">FreeQuently Ask Questions?</h1>
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                     <div className="card bg-base-100 shadow-xl">
                         <div className="card-body">

@@ -15,7 +15,7 @@ const Headers = () => {
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/statistic'>Statistics</Link></li>
                         <li><Link to='/applied'>Applied Job</Link></li>
-                        <li><Link to='/blog'>BLog</Link></li>
+                        <li><Link to='/blog'>Blog</Link></li>
                         </ul>
                     </div>
                     <Link to="/" className="walks-logo">Walks Of Life</Link>
@@ -25,11 +25,11 @@ const Headers = () => {
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/statistic'>Statistics</Link></li>
                         <li><Link to='/applied'>Applied Job</Link></li>
-                        <li><Link to='/blog'>BLog</Link></li>
+                        <li><Link to='/blog'>Blog</Link></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
-                <button  className="start-applying-btn">Start Applying</button>
+                <button className="start-applying-btn">Start Applying</button>
                 </div>
             </div>
         </div>

@@ -44,6 +44,14 @@
 
 }
 
+.go-back-btn{
+    width: 172px;
+    height: 65px;
+    background: linear-gradient(90deg, #200211 0%, #b60b55 100%);
+    display: block;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 680px) {
     .width {
         width: 100%;

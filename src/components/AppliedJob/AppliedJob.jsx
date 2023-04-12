@@ -5,9 +5,7 @@ import JobReview from '../JobReview/JobReview';
 
 const AppliedJob = () => {
     const featureData = useLoaderData();
-    // console.log(featureData);
     const [appliedJob, setAppliedJob] = useState(featureData);
-
 
     const handleBtn = (e) => {
         let word = e.target.value;
@@ -30,7 +28,7 @@ const AppliedJob = () => {
             <div className='lg:w-[1280px] mx-auto'>
                 <div className='flex items-center justify-end gap-2'>
                     <select onChange={handleBtn} className='filter'>
-                        <option disabled selected>Filter By</option>
+                        <option defaultValue='selected' >Filter By</option>
                         <option value="All">All Job</option>
                         <option value="Remote">Remote</option>
                         <option value="Onsite">Onsite</option>

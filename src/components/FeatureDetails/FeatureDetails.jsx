@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 import './FeatureDetails.css'
-import { AiOutlineDollarCircle, AiOutlineMail } from 'react-icons/ai';
+import { AiOutlineDollarCircle, AiOutlineMail,AiFillProject } from 'react-icons/ai';
 import { BsTelephone } from 'react-icons/bs';
 import { CiLocationOn } from 'react-icons/ci';
 import { addToDb } from '../../utilities/fakedb';
@@ -21,7 +21,6 @@ const FeatureDetails = () => {
     }, [])
 
     const handleApplyNow = (id) => {
-        // console.log(id);
         addToDb(id)
     }
 
@@ -45,7 +44,7 @@ const FeatureDetails = () => {
                                 <p><span className='font-bold'>Salary</span>:{details.salary}</p>
                             </div>
                             <div className='flex items-center gap-1'>
-
+                                <AiFillProject></AiFillProject>
                                 <p><span className='font-bold'> Job Title: </span>{details.jobTitle}</p>
                             </div>
 
