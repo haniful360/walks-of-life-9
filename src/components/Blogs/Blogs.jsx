@@ -3,12 +3,12 @@ import React from 'react';
 const Blogs = () => {
     return (
         <div>
-            <section class="px-4 lg:px-16">
-                <h1 class="font-bold text-center my-6  leading-[54px] text-[45px]">FreeQuently Ask Questions?</h1>
-                <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-                    <div class="card bg-base-100 shadow-xl">
-                        <div class="card-body">
-                            <h2 class="card-title">
+            <section className="px-4 lg:px-16">
+                <h1 className="font-bold text-center my-6 leading-[54px] text-[45px]">FreeQuently Ask Questions?</h1>
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    <div className="card bg-base-100 shadow-xl">
+                        <div className="card-body">
+                            <h2 className="card-title">
                                 When should you use Context Api?
 
                             </h2>
@@ -21,19 +21,19 @@ const Blogs = () => {
                             </div>
                         </div>
                     </div>
-                    <div class="card bg-base-100 shadow-xl">
-                        <div class="card-body">
-                            <h2 class="card-title">
+                    <div className="card bg-base-100 shadow-xl">
+                        <div className="card-body">
+                            <h2 className="card-title">
                                 What is Custom hook in React?
 
                             </h2>
                             <p>Custom hooks allow developers to extract and reuse stateful logic from components, making code more modular and easier to maintain. Custom hooks can be used to abstract away complex state management, data fetching, or any other behavior that needs to be shared across different components</p>
                         </div>
                     </div>
-                    <div class="card bg-base-100 shadow-xl">
-                        <div class="card-body">
-                            <h2 class="card-title">
-                                What is the  useRef  and useMemo?
+                    <div className="card bg-base-100 shadow-xl">
+                        <div className="card-body">
+                            <h2 className="card-title">
+                                What is the  useRef?
 
                             </h2>
                             <p>useRef: You can use useRef to keep track of mutable values such as timers, focus management, or any value that needs to persist across renders without triggering a re-render.
@@ -41,9 +41,9 @@ const Blogs = () => {
                                 The useRef hook returns a mutable ref object that has a current property. The value of current can be updated without triggering a re-render.</p>
                         </div>
                     </div>
-                    <div class="card bg-base-100 shadow-xl">
-                        <div class="card-body">
-                            <h2 class="card-title">
+                    <div className="card bg-base-100 shadow-xl">
+                        <div className="card-body">
+                            <h2 className="card-title">
                                 What is the useMemo?
 
                             </h2>

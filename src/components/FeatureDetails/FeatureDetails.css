@@ -8,6 +8,17 @@
     margin-bottom: 50px;
 }
 
+.job-details-img {
+    background: linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%), url('../../images/Vector.png');
+    height: 200px;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    ;
+}
+
 .job-details-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -21,7 +32,8 @@
     font-size: 20px;
     line-height: 32px;
     color: #1A1919;
-    margin-top: 15px;
+    margin: 15px 0;
+
 
 }
 
@@ -46,6 +58,7 @@
     font-size: 20px;
     line-height: 27px;
     color: #757575;
+    margin: 10px 0;
 
 }
 
@@ -66,4 +79,15 @@
     color: #FFFFFF;
     margin-top: 24px;
 
+}
+
+@media screen and (max-width: 680px) {
+    .job-details-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 10px;
+    }
+    .apply-now-btn {
+        width: 200px;
+    }
 }

@@ -7,7 +7,7 @@ const Features = () => {
     const [features, setFeatures] = useState([]);
 
     const [noOfElement, setNoOfElement] = useState(4);
-    const sliceFeature = features.slice(0, noOfElement)
+    const sliceFeature = features.slice(0, noOfElement);
     
     const handleSeeAllJob = () => {
         setNoOfElement(noOfElement + noOfElement)

@@ -1,4 +1,4 @@
-.applied-job-title {
+.chart-title{
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 800;
@@ -8,22 +8,7 @@
     color: #1A1919;
     margin-top: 50px;
 }
-
-.filter {
-    width: 125px;
-    height: 50px;
-    padding: 9px 19px;
-    border-radius: 4px;
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 17px;
-    line-height: 22px;
-    color: #9873FF;
-    border: 1px solid #9873FF;
-}
-
-.applied-bg-img{
+.composed-bg-img{
     background: linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%), url('../../images/Vector.png');
     height: 200px;
     background-repeat: no-repeat;
@@ -33,4 +18,3 @@
     justify-content: center;
     align-items: center;
 }
-
