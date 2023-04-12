@@ -1,21 +1,21 @@
-import { getShoppingCart } from "../utilities/fakedb";
+import { getJobInfo } from "../utilities/fakedb";
 
 const featureDataDetails = async() =>{
     const loaderData = await fetch('/data.json')
     const features = await loaderData.json();
     // console.log(feature);
 
-    const storedCart = getShoppingCart()
-    const savedCart = [];
-    for(const id in storedCart) {
+    const storedJob = getJobInfo()
+    const savedJob = [];
+    for(const id in storedJob) {
         const addedProduct = features.find(feature => feature.id === id);
         if(addedProduct){
-            const quantity = storedCart[id]
+            const quantity = storedJob[id]
             addedProduct.quantity = quantity
-            savedCart.push(addedProduct)
+            savedJob.push(addedProduct)
         }
     }
-    return savedCart;
+    return savedJob;
 
 
 }
